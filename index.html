@@ -31,7 +31,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,8 +50,15 @@ body, html {
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (3D model) */
 .bgimg-3 {
+  background-image: url("https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/Kasa_intercepter_2023-Nov-03_02-41-52AM-000_CustomizedView3647904956_png.png?raw=true");
+  min-height: 400px;
+}
+
+
+/* Fourth image (Contact) */
+.bgimg-4 {
   background-image: url("https://github.com/Kasa-cosmos/KASA-Photos/blob/main/IMG_9706.JPG?raw=true");
   min-height: 400px;
 }
@@ -125,7 +132,7 @@ body, html {
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">2000+</span><br>
+    <span class="w3-xlarge">500+</span><br>
     Youtube Veiws
   </div>
   <div class="w3-quarter w3-section">
@@ -149,12 +156,35 @@ body, html {
   </div>
 </div>
 
+
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">Current Progress</h3>
   <p class="w3-center"><em>Here are some of our latest Progress.<br> Click on the images to make them bigger</em></p><br>
   
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center"> 
+    <div class="w3-col m3">
+      <img src="https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/Kasa_intercepter_2023-Nov-03_02-35-10AM-000_CustomizedView4829115009_jpg.jpg?raw=true" style="width:100%" 
+      onclick="onClick(this)" class="w3-hover-opacity" alt="KASA Intercepter 3d Model Render">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/Screenshot%20from%202023-10-27%2020-57-44.png?raw=true" style="width:100%" 
+      onclick="onClick(this)" class="w3-hover-opacity" alt="Program to find distance between satellite and desired object">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/Screenshot%20from%202023-10-27%2020-59-23.png?raw=true" style="width:100%" 
+      onclick="onClick(this)" class="w3-hover-opacity" alt="Object Dectection and Center point program ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/IMG_9775%202.jpg?raw=true" style="width:100%" 
+      onclick="onClick(this)" class="w3-hover-opacity" alt="KASA Intercepter 3d Printed">
+    </div>
+  </div>
+
   <div class="w3-row-padding w3-center"> 
     <div class="w3-col m3">
       <img src="https://github.com/Kasa-cosmos/KASA-Photos/blob/main/Progpics/Screenshot%202023-10-10%20at%2011.42.31%20PM.png?raw=true" style="width:100%" 
@@ -212,8 +242,27 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with 3D Model -->
+
 <div class="bgimg-3 w3-display-container ">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">KASA Interceptor</span>
+  </div>
+</div>
+
+<!-- Interactive 3D Model -->
+
+<div class="w3-row-padding w3-center"> 
+  <h3 class="w3-center">Interactable 3D Model </h3>
+  <p class="w3-center"><em>Here is a our Latest 3D model of the Interceptor Kasa Satellite.<br> Feel Free to Play around</em></p><br>
+  
+
+  <iframe src="https://memphis176.autodesk360.com/shares/public/SHd38bfQT1fb47330c99fca71a2068a51f54?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+</div>
+
+
+<!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container ">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
